@@ -36,7 +36,7 @@ public class ItemController {
 	@GetMapping("/item/{id}")
 	public ResponseEntity<Item> getItem(@PathVariable long id) {
 		Item item = itemService.getItem(id);
-		return new ResponseEntity<>(item, HttpStatus.OK);
+		return new ResponseEntity<>(item, HttpStatus.FOUND);
 	}
 	
 	@PostMapping("/items")
@@ -56,7 +56,6 @@ public class ItemController {
 	@DeleteMapping("/item/{id}")
 	public ResponseEntity<Item> deleteItem(@PathVariable long id){
 		Item item = itemService.deleteItem(id);
-		
 		return item != null? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
 	}
 }
