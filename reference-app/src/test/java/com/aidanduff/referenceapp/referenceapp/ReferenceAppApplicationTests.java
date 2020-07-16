@@ -111,5 +111,14 @@ class ReferenceAppApplicationTests {
 		ResponseEntity<Item> result = this.restTemplate.getForEntity("http://localhost:" + port + "/item/2", Item.class);
 		assertEquals(404, result.getStatusCodeValue());
 	}
+	
+	@Test
+	public void itemtoDeleteShouldNotBeFound() throws Exception {
+		Item item = new Item(1, "Bird", "Two Legged Animal");
+		HttpEntity<Item> request = new HttpEntity<>(item);
+		this.restTemplate.postForEntity("http://localhost:" + port + "/items", request, Item.class);
+		ResponseEntity<Item> result = restTemplate.exchange("http://localhost:" + port + "/item/2", HttpMethod.DELETE, request, Item.class);
+		assertEquals(404, result.getStatusCodeValue());
+	}
 
 }
