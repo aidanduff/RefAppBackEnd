@@ -1,6 +1,5 @@
 package com.aidanduff.referenceapp.controller;
 
-import java.net.URI;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.aidanduff.referenceapp.entity.Item;
 import com.aidanduff.referenceapp.service.ItemService;
@@ -34,9 +32,9 @@ public class ItemController {
 	}
 	
 	@GetMapping("/item/{id}")
-	public ResponseEntity<Item> getItem(@PathVariable long id) {
+	public ResponseEntity<?> getItem(@PathVariable long id) {
 		Item item = itemService.getItem(id);
-		return new ResponseEntity<>(item, HttpStatus.FOUND);
+		return item != null? new ResponseEntity<>(item, HttpStatus.FOUND): ResponseEntity.notFound().build();
 	}
 	
 	@PostMapping("/items")
@@ -47,7 +45,7 @@ public class ItemController {
 	
 	
 	@PutMapping("/item/{id}")
-	public ResponseEntity<Item> addItem(@RequestBody Item item, @PathVariable long id){
+	public ResponseEntity<Item> updateItem(@RequestBody Item item, @PathVariable long id){
 		itemService.updateItem(id, item);
 		return new ResponseEntity<>(item, HttpStatus.OK);
 	}
