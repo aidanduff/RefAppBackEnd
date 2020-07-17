@@ -19,7 +19,7 @@ import com.aidanduff.referenceapp.entity.Item;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-class ItemControllerTests {
+class IntegrationTest {
 	@LocalServerPort
 	private int port;
 
