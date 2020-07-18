@@ -1,10 +1,101 @@
 ----------------------------------------------------------------
-Sat Jul 18 12:53:09 BST 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0173-61c5-5275-00000eb2a198 
-on database directory memory:C:\Users\Admin\git\LocalRefApp\reference-app\75384bea-ee06-4c2e-a2b6-de2b54d46975 with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Sat Jul 18 19:32:13 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0173-6332-b03e-000013549458 
+on database directory memory:C:\Users\Admin\git\LocalRefApp\reference-app\3bd7f3b2-5473-40fd-947d-a369bfa899b7 with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
 Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_201-b09
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\LocalRefApp\reference-app
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Jul 18 19:32:18 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance d46b80cd-0173-6332-b03e-000013549458 
+on database directory memory:C:\Users\Admin\git\LocalRefApp\reference-app\169b926a-4158-4b6e-87a4-4b6c6285a126 with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\LocalRefApp\reference-app
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Jul 18 19:32:19 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance ad8a418f-0173-6332-b03e-000013549458 
+on database directory memory:C:\Users\Admin\git\LocalRefApp\reference-app\98861475-e80e-4996-9f2a-a70312668b19 with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\LocalRefApp\reference-app
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Jul 18 19:32:21 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 51aec24e-0173-6332-b03e-000013549458 
+on database directory memory:C:\Users\Admin\git\LocalRefApp\reference-app\7a4710af-da54-4a0c-8c1b-138ba1c8c7f9 with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\LocalRefApp\reference-app
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Jul 18 19:32:23 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 35464312-0173-6332-b03e-000013549458 
+on database directory memory:C:\Users\Admin\git\LocalRefApp\reference-app\91b9caf4-866c-44d0-b1a7-d3d6e8b5f861 with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\LocalRefApp\reference-app
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Jul 18 19:32:24 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 2fb243cf-0173-6332-b03e-000013549458 
+on database directory memory:C:\Users\Admin\git\LocalRefApp\reference-app\d97335be-e82f-4ded-b860-18e26915751d with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\LocalRefApp\reference-app
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Jul 18 19:32:26 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 3f46c48e-0173-6332-b03e-000013549458 
+on database directory memory:C:\Users\Admin\git\LocalRefApp\reference-app\3ab9d834-a517-4284-901b-831682f18263 with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Admin\git\LocalRefApp\reference-app
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Jul 18 19:32:28 BST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 7e760550-0173-6332-b03e-000013549458 
+on database directory memory:C:\Users\Admin\git\LocalRefApp\reference-app\f7890e09-98a2-4dc3-ac3f-a540fe0b346a with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
+Loaded from file:/C:/Users/Admin/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
 user.dir=C:\Users\Admin\git\LocalRefApp\reference-app
 os.name=Windows 10
 os.arch=amd64
