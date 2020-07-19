@@ -73,13 +73,13 @@ public class ItemControllerTest {
 	}
 	
 	@Test
-	public void getAllShouldHaveEmptyBody() throws Exception {
+	public void getAllResultShouldHaveNoBody() throws Exception {
 		List<Item> itemList = new ArrayList<>();
 		when(itemService.getAllItems())
 				.thenReturn(itemList);
 		
 		this.mockMvc.perform(get("/items"))
-//			.andDo(print())
+			.andDo(print())
 			.andExpect(status().isNoContent());
 		
 		assertFalse(itemController.getAllItems().hasBody());
@@ -105,21 +105,13 @@ public class ItemControllerTest {
 	}
 	
 	@Test
-	public void putItemShouldSucceed() throws Exception {
+	public void updateItemShouldSucceed() throws Exception {
 		ObjectMapper objectMapper = new ObjectMapper();
 		Item item = new Item(1, "Bird", "Winged Animal");
-		String originalJson = objectMapper.writeValueAsString(item);
 		item.setDescription("Beaked Animal");
 		String updatedJson = objectMapper.writeValueAsString(item);
 		
 		when(itemService.addItem(item)).thenReturn(item);
-		
-		this.mockMvc.perform(post("/items")
-				.contentType(MediaType.APPLICATION_JSON)
-	            .content(originalJson)
-	            .accept(MediaType.APPLICATION_JSON))
-				.andDo(print())
-                .andExpect(status().isCreated());
 		
 		this.mockMvc.perform(put("/item/1")
 				.contentType(MediaType.APPLICATION_JSON)
@@ -135,18 +127,9 @@ public class ItemControllerTest {
 	@Test
 	public void getItemShouldSucceed() throws Exception {
 		Item item = new Item(1, "Bird", "Winged Animal");
-		String json = new ObjectMapper().writeValueAsString(item);
 
-		
 		when(itemService.addItem(item)).thenReturn(item);
 		when(itemService.getItem(1)).thenReturn(item);
-		
-		this.mockMvc.perform(post("/items")
-				.contentType(MediaType.APPLICATION_JSON)
-	            .content(json)
-	            .accept(MediaType.APPLICATION_JSON))
-				.andDo(print())
-                .andExpect(status().isCreated());
 		
 		this.mockMvc.perform(get("/item/1")
 				.contentType(MediaType.APPLICATION_JSON)
@@ -159,7 +142,7 @@ public class ItemControllerTest {
 	}
 	
 	@Test
-	public void getItemShouldNotSucceed() throws Exception {
+	public void getNonExistantItemShouldBeNotFound() throws Exception {
 		when(itemService.getItem(1)).thenReturn(null);
 		
 		this.mockMvc.perform(get("/item/1")
@@ -172,18 +155,9 @@ public class ItemControllerTest {
 	@Test
 	public void deleteItemShouldSucceed() throws Exception {
 		Item item = new Item(1, "Bird", "Winged Animal");
-		String json = new ObjectMapper().writeValueAsString(item);
 
-		when(itemService.addItem(item)).thenReturn(item);
 		when(itemService.deleteItem(1)).thenReturn(item);
-		
-		this.mockMvc.perform(post("/items")
-				.contentType(MediaType.APPLICATION_JSON)
-	            .content(json)
-	            .accept(MediaType.APPLICATION_JSON))
-				.andDo(print())
-                .andExpect(status().isCreated());
-		
+				
 		this.mockMvc.perform(delete("/item/1")
 				.contentType(MediaType.APPLICATION_JSON)
 	            .accept(MediaType.APPLICATION_JSON))
@@ -192,19 +166,9 @@ public class ItemControllerTest {
 	}
 	
 	@Test
-	public void deleteItemShouldNotSucceed() throws Exception {
-		Item item = new Item(1, "Bird", "Winged Animal");
-		String json = new ObjectMapper().writeValueAsString(item);
+	public void deleteNonExistantItemShouldBeNotFound() throws Exception {
 
-		when(itemService.addItem(item)).thenReturn(item);
 		when(itemService.deleteItem(2)).thenReturn(null);
-		
-		this.mockMvc.perform(post("/items")
-				.contentType(MediaType.APPLICATION_JSON)
-	            .content(json)
-	            .accept(MediaType.APPLICATION_JSON))
-				.andDo(print())
-                .andExpect(status().isCreated());
 		
 		this.mockMvc.perform(delete("/item/2")
 				.contentType(MediaType.APPLICATION_JSON)
