@@ -41,7 +41,7 @@ public class ItemControllerTest {
 	
 	@MockBean
 	private ItemService itemService;
-
+	
 	@Test
 	public void listShouldbeReturnedFromGetAll() throws Exception {
 		List<Item> itemList = new ArrayList<>();
